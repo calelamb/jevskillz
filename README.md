@@ -72,6 +72,8 @@ The model is pinned so numbers stay comparable. Paired good and bad examples in 
 | rerank | relevant doc 2.89 / 3 | off-topic 0.01 |
 | choice | correct bucket, confidence 1.00 | |
 
+**Field result:** on a real app-store resubmission, `resolve` credited 10/10 reviewer findings at 0.74–0.92 (mean 0.86 [0.82, 0.89]) against unfixed controls of 0.06–0.26, and `tests` rated the 4 regression tests 0.71–0.96.
+
 **Gates:** a check passes when the mean is ≥ 0.50 **and** the lower bound is ≥ 0.40. `resolve` also requires separation ≥ 0.30 from its control and a regression score < 0.50. Scores between 0.40 and 0.55 are ambiguous: add evidence rather than rounding up. If you change the model, rerun `npm run calibrate` and update these numbers.
 
 ## What this is not

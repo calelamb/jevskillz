@@ -16,4 +16,9 @@ Measured: fully evidenced criterion 0.86 [0.79, 0.90]; happy-path-only evidence 
 
 A FAIL usually means the evidence covers only part of the checkbox (e.g. error shown but no Retry). Add the missing test, don't reword the criterion.
 
+## Gate outcomes, not procedure
+- Score **outcome** criteria only: what a user, caller or reviewer can observe. Skip process steps ("write the failing test", "run → FAIL", "commit"): a RED run can't be re-proven after the fact, so those score near 0 even when the work was done right. Measured on a real phase: 12/39 when process steps were included, while the same phase's outcome checks (`resolve`/`tests`) passed 14/14 at 0.71–0.96.
+- Prove "the test would catch a regression" with a mutation check (revert the fix, watch it go red) and `jev tests`, not by grading a "run → FAIL" checkbox.
+- **Split compound checkboxes** ("suite passes AND lint clean AND tsc clean") into one item each. Bundles land in the ambiguous 0.40–0.55 band even when every part is true.
+
 **REQUIRED BACKGROUND:** jev-core.
