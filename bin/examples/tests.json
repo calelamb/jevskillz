@@ -1,0 +1,12 @@
+[
+ {
+  "id": "behavioral",
+  "behavior": "When saving a CMS page title, the app copies to clipboard and sends zero network writes.",
+  "test": "it('CMS copy sends zero writes', async () => { render(<TitleEditor page={cmsItem}/>); await user.click(screen.getByRole('button',{name:/copy/i})); expect(navigator.clipboard.writeText).toHaveBeenCalledWith('New title'); expect(fetch).not.toHaveBeenCalled(); expect(screen.getByText('Copied to clipboard')).toBeVisible(); })"
+ },
+ {
+  "id": "mock-only",
+  "behavior": "When saving a CMS page title, the app copies to clipboard and sends zero network writes.",
+  "test": "it('renders', () => { const spy = vi.fn(); render(<TitleEditor page={cmsItem} onSave={spy}/>); expect(spy).toBeDefined(); })"
+ }
+]

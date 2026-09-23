@@ -1,0 +1,68 @@
+[
+ {
+  "id": "idea-A-router-nav",
+  "state": "Approach: replace every window.location.replace('/') in the embedded iframe app with react-router navigate('/'), plus a test guard that fails if any document navigation happens. Constraints: must work inside a sandboxed iframe, ship within 2 days, no backend change.",
+  "dimensions": {
+   "fit": {
+    "question": "How well does this approach satisfy every stated constraint?",
+    "levels": [
+     "Violates at least one constraint",
+     "Meets some constraints, unclear on others",
+     "Meets every stated constraint"
+    ],
+    "weight": 2
+   },
+   "risk": {
+    "question": "What regression risk does this approach carry?",
+    "levels": [
+     "High: rewrites many systems or introduces unknowns",
+     "Moderate: several files, some untested paths",
+     "Low: small, targeted, test-guarded and easy to revert"
+    ],
+    "weight": 1
+   },
+   "effort": {
+    "question": "How does the effort compare to the stated time window?",
+    "levels": [
+     "Clearly exceeds the window",
+     "Roughly fills the window",
+     "Fits well inside the window"
+    ],
+    "weight": 1
+   }
+  }
+ },
+ {
+  "id": "idea-B-rewrite",
+  "state": "Approach: rewrite the embedded iframe app in Next.js with a new backend session service and migrate all users. Constraints: must work inside a sandboxed iframe, ship within 2 days, no backend change.",
+  "dimensions": {
+   "fit": {
+    "question": "How well does this approach satisfy every stated constraint?",
+    "levels": [
+     "Violates at least one constraint",
+     "Meets some constraints, unclear on others",
+     "Meets every stated constraint"
+    ],
+    "weight": 2
+   },
+   "risk": {
+    "question": "What regression risk does this approach carry?",
+    "levels": [
+     "High: rewrites many systems or introduces unknowns",
+     "Moderate: several files, some untested paths",
+     "Low: small, targeted, test-guarded and easy to revert"
+    ],
+    "weight": 1
+   },
+   "effort": {
+    "question": "How does the effort compare to the stated time window?",
+    "levels": [
+     "Clearly exceeds the window",
+     "Roughly fills the window",
+     "Fits well inside the window"
+    ],
+    "weight": 1
+   }
+  }
+ }
+]

@@ -1,0 +1,20 @@
+[
+ {
+  "id": "q1",
+  "query": "How should an embedded app recognize an install-time OAuth grant without asking the user for consent again?",
+  "candidates": [
+   {
+    "id": "id-token-doc",
+    "text": "Embedded extensions can request a short-lived ID token from the host and send it to your backend, which resolves it with the platform's token-resolve endpoint to identify the user and link them to your app's account without another consent screen."
+   },
+   {
+    "id": "pricing",
+    "text": "Workspace plans include Starter, Core, Growth and Agency tiers billed monthly or annually."
+   },
+   {
+    "id": "oauth-basic",
+    "text": "Apps use the OAuth 2.0 authorization code flow; after the user authorizes, the platform redirects to your redirect URI with a code you exchange for an access token."
+   }
+  ]
+ }
+]

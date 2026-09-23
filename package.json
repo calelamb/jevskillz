@@ -1,0 +1,14 @@
+{
+  "name": "jevskillz",
+  "version": "0.1.0",
+  "description": "Claude Code skills that put calibrated TypeSafe Jev confidence checks into every step of coding: brainstorm, research, write, test, verify, triage.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "jev": "bin/jev.mjs" },
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test bin/jev.test.mjs",
+    "calibrate": "for m in claims resolve ac tests noul score rerank choice; do echo \"== $m\"; node bin/jev.mjs $m bin/examples/$m.json || true; done"
+  },
+  "keywords": ["claude-code", "skills", "typesafe", "jev", "llm", "verification", "confidence"]
+}

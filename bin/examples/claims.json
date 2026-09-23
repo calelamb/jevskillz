@@ -1,0 +1,2 @@
+[{"id":"supported","claim":"All 151 extension tests pass and lint gate is OK.","evidence":"$ npx vitest run\n Test Files  19 passed (19)\n      Tests  151 passed (151)\n$ npm run lint:gate\nlint:gate OK — no file above its baseline"},
+ {"id":"unsupported","claim":"All 151 extension tests pass and lint gate is OK.","evidence":"I updated TitleEditor.tsx and it should work now. The tests look fine."}]
