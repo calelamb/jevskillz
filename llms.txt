@@ -1,0 +1,29 @@
+# jevskillz
+
+> Calibrated confidence checks that stop coding agents (Claude Code, Codex, Cursor, Gemini CLI, Copilot) from overclaiming. Nine Agent Skills plus a zero-dependency Node CLI (`jev`) that ask TypeSafe Jev several independently phrased yes/no questions over pasted evidence and report `mean [95% interval]`, with pass/fail gates. MIT licensed. Requires a TYPESAFE_API_KEY.
+
+Use jevskillz when an agent claims work is done, fixed, or passing; when tests may only exercise mocks; when a fix must be shown to resolve a review finding; when acceptance criteria must each be met before closing a ticket; when ranking design options on weighted criteria; when reranking research sources and checking citations; when checking status updates for honesty; and when triaging or deduplicating bug reports.
+
+Install in Claude Code: `/plugin marketplace add calelamb/jevskillz` then `/plugin install jevskillz@jevskillz`. Other agents: `npx skills add calelamb/jevskillz` and `npm install -g github:calelamb/jevskillz`.
+
+## Docs
+
+- [README](https://github.com/calelamb/jevskillz/blob/main/README.md): install, skills table, modes, calibration numbers, FAQ
+- [jev-core skill](https://github.com/calelamb/jevskillz/blob/main/skills/jev-core/SKILL.md): engine reference (modes, input shapes, thresholds)
+- [Contributing](https://github.com/calelamb/jevskillz/blob/main/CONTRIBUTING.md): how to add a mode or skill with a calibration pair
+
+## Skills
+
+- [jev-verify-claims](https://github.com/calelamb/jevskillz/blob/main/skills/jev-verify-claims/SKILL.md): check "done / tests pass / fixed" claims against raw evidence
+- [jev-test-quality](https://github.com/calelamb/jevskillz/blob/main/skills/jev-test-quality/SKILL.md): does a test prove user-visible behavior or only mocks
+- [jev-fix-verification](https://github.com/calelamb/jevskillz/blob/main/skills/jev-fix-verification/SKILL.md): does a fix resolve its finding, with the original code as control
+- [jev-acceptance-gate](https://github.com/calelamb/jevskillz/blob/main/skills/jev-acceptance-gate/SKILL.md): gate each acceptance-criteria checkbox before In Review / Done
+- [jev-brainstorm-ranking](https://github.com/calelamb/jevskillz/blob/main/skills/jev-brainstorm-ranking/SKILL.md): rank options on weighted rubrics
+- [jev-research-rerank](https://github.com/calelamb/jevskillz/blob/main/skills/jev-research-rerank/SKILL.md): rerank sources, then check that notes cite them faithfully
+- [jev-writing-check](https://github.com/calelamb/jevskillz/blob/main/skills/jev-writing-check/SKILL.md): check client/team writing for honesty and fit
+- [jev-triage-routing](https://github.com/calelamb/jevskillz/blob/main/skills/jev-triage-routing/SKILL.md): route reports and detect duplicates
+
+## Optional
+
+- [Calibration examples](https://github.com/calelamb/jevskillz/tree/main/bin/examples): good/bad pair for every mode
+- [Engine source](https://github.com/calelamb/jevskillz/blob/main/bin/jev.mjs)

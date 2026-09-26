@@ -1,0 +1,25 @@
+{
+  "name": "jevskillz",
+  "version": "0.1.0",
+  "description": "Calibrated confidence checks that stop coding agents from overclaiming: verify 'tests pass' / 'fixed' / 'done' claims, grade tests, gate acceptance criteria, rank options, and triage issues with TypeSafe Jev.",
+  "author": {
+    "name": "Cale Lamb",
+    "url": "https://github.com/calelamb"
+  },
+  "homepage": "https://github.com/calelamb/jevskillz",
+  "repository": "https://github.com/calelamb/jevskillz",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "agent-skills",
+    "verification",
+    "hallucination",
+    "calibration",
+    "confidence",
+    "code-review",
+    "testing",
+    "llm-evaluation",
+    "typesafe",
+    "jev"
+  ]
+}

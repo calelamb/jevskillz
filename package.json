@@ -10,5 +10,8 @@
     "test": "node --test bin/jev.test.mjs",
     "calibrate": "for m in claims resolve ac tests noul score rerank choice; do echo \"== $m\"; node bin/jev.mjs $m bin/examples/$m.json || true; done"
   },
-  "keywords": ["claude-code", "skills", "typesafe", "jev", "llm", "verification", "confidence"]
+  "repository": { "type": "git", "url": "git+https://github.com/calelamb/jevskillz.git" },
+  "homepage": "https://github.com/calelamb/jevskillz#readme",
+  "bugs": { "url": "https://github.com/calelamb/jevskillz/issues" },
+  "keywords": ["claude-code", "claude-code-plugin", "agent-skills", "skills", "codex", "cursor", "typesafe", "jev", "llm", "llm-evaluation", "verification", "hallucination", "calibration", "confidence", "code-review", "testing"]
 }

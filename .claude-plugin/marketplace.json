@@ -1,0 +1,15 @@
+{
+  "name": "jevskillz",
+  "description": "Calibrated confidence checks for every step of coding with Claude Code.",
+  "owner": {
+    "name": "Cale Lamb",
+    "url": "https://github.com/calelamb"
+  },
+  "plugins": [
+    {
+      "name": "jevskillz",
+      "source": "./",
+      "description": "Stop coding agents from overclaiming: 9 skills that verify done/fixed/passing claims, grade tests, gate acceptance criteria, rank options, and triage issues with calibrated TypeSafe Jev scores."
+    }
+  ]
+}
